@@ -12,11 +12,10 @@ read -p "Enter which website you would like to deploy to (simply type 1,2 etc):
 
 if [ $SELECTION -eq 1 ]
 then
-    npm run build
-    #  && scp -r _site/* root@jezl.xyz:/var/www/jezl.xyz
+    npm run build && scp -r _site/* root@jezl.xyz:/var/www/jezl.xyz
 elif [ $SELECTION -eq 2 ]
 then
-    echo "again!"
+    npm run build && scp -r _site/* root@jezl.xyz:/var/www/personal.jezl.xyz
 fi
 
 
