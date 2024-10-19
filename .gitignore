@@ -3,3 +3,7 @@
 
 # Unignore all with extensions
 !*.*
+
+# Ignore sensitive scripts
+vps-deploy.sh
+notes-deploy.sh
